@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page Layout</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+      }
+      .header {
+        background-color: #04690d;
+        color: white;
+        text-align: center;
+        /* padding: 10px 0; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      .main {
+        flex: 2;
+        margin-right: 20px;
+      }
+      .main1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .tablee {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      ul li {
+        list-style: none;
+      }
+      .sidebar {
+        flex: 1;
+        background-color: #f1f1f1;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #4caf50;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+      .self-study {
+        color: red; /* Steps in red for self-study */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <!-- <p>My Website</p> -->
+      <!-- <img
+        src="logo2.jpg"
+        alt="logo"
+        width="100"
+        height="50"
+        style="border-radius: 50%"
+      /> -->
+      <!-- <h1>Website Logo (Image)</h1> -->
+    </div>
+
+    <div class="nav">
+      <a href="#home">Home</a>
+      <a href="registration.html">Contact Us</a>
+      <a href="#about">About Us</a
+      ><img
+        src="logo2.jpg"
+        alt="logo"
+        width="100"
+        height="50"
+        style="border-radius: 50%"
+      />
+    </div>
+
+    <div class="container">
+      <div class="main">
+        <h2 style="text-align: center">My Profile</h2>
+        <div class="main1">
+          <table>
+            <!-- <tr>
+              <td>My Pages Online</td>
+              <td>Social Links</td>
+              <td>Iframe Video</td>
+            </tr> -->
+            <tr class="tablee">
+              <td>
+                <p>
+                  <a href="https://www.facebook.com" target="_blank"
+                    >Facebook</a
+                  >
+                </p>
+                <p>
+                  <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                </p>
+              </td>
+              <td>
+                <p>Follow us on social media!</p>
+              </td>
+              <td>
+                <iframe
+                  width="300"
+                  height="200"
+                  src="video.mp4"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </td>
+            </tr>
+          </table>
+          <div
+            style="text-align: center; padding: 5rem; background-color: #7e8767"
+          >
+            <p>Name: mmohamed ibrahim</p>
+            <p>Age: 23</p>
+            <p>Address: 123 Main St.</p>
+            <p>Phones: +201019506456</p>
+            <p>
+              Faculty:
+              <a href="https://example.com" target="_blank"
+                >Al Azhar University</a
+              >
+            </p>
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Reading</li>
+              <li>Traveling</li>
+              <li>Cooking</li>
+            </ul>
+            <p>Mail: <a href="mailto:zakem7671@gmail.com">Email Me</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <h2>Personal Photo</h2>
+        <img
+          src="mohamed.jpeg"
+          alt="Personal Photo"
+          height="500"
+          style="width: 70%; border-radius: 5px"
+        />
+        <h3>News</h3>
+        <p>Stay tuned for the latest updates!</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Top of page link | Copyrights © 2024 ITI</p>
+    </div>
+  </body>
+</html>
